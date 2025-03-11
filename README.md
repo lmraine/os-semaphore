@@ -1,4 +1,5 @@
-# os-semaphore
+# OS Semaphore Lab
+In this lab you will use the Python threading module to create producer and consumer threads as well as create mutex locks and semaphores to solve the Producer Consumer Buffer problem.
 
 ## Set Up
 <ol>
@@ -32,6 +33,7 @@ You will need to use the threading, time, and random modules to complete this la
 		<li>full_slots: a threading semaphore to indicate how many slots are full</li>
 	</ol>
     </ol>
+	<br>
 <li><b>Producer class</b></li>
 The producer will produce items represented as integers to add to the buffer. This will subclass the threading Python class.
 	<ol>
@@ -47,7 +49,7 @@ The producer will produce items represented as integers to add to the buffer. Th
 	<li>When updating the buffer pointers use this calculation: ({pointer} + 1) % {buffer size}</li>
       </ol>
     </ol>
-      
+      <br>
 <li><strong>Consumer Class</strong></li>
 The consumer class will consume items from the buffer. This will subclass the threading Python class.
 <ol>
@@ -61,4 +63,15 @@ The consumer class will consume items from the buffer. This will subclass the th
           <li>consume: Consumes and returns an item from the buffer. It must acquire the appropriate locks. When the item is consumed, print "Consumed: {item} from position {position} </li>
 	<li>run(): Overload the built in threading run() method to consume 10 items from the buffer. Also print out "Consumer {id} consumed {item}..." after consuming. After consuming, put the process to "sleep" for a random amount of time between 0.1 and 0.5. This simulates the time it takes to consume an item. </li>
         </ol>
+</ol>
+<br>
+<li><strong>main</strong></li>
+In main create the following objects and threads:
+<ol>
+	<li>A buffer with size 5</li>
+	<li>Two producers</li>
+	<li>Two consumers</li>
+	<li>Start the producers and consumers</li>
+	<li>Join the producers and consumers</li>
+	<li>Once complete print "All producers and consumers have finished.</li>
 </ol>
