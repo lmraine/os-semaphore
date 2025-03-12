@@ -1,5 +1,6 @@
 # OS Semaphore Lab
-In this lab you will use the Python threading module to create producer and consumer threads as well as create mutex locks and semaphores to solve the Producer Consumer Buffer problem.
+In this lab you will use the Python threading module to create producer and consumer threads as well as create mutex locks and semaphores to solve the Producer Consumer Buffer problem. You can find the example of this in the book: section 7.1.1, Figure 7.1, Figure 7.2.
+Here is the Python Thread module doc: https://docs.python.org/3/library/threading.html
 
 ## Set Up
 <ol>
